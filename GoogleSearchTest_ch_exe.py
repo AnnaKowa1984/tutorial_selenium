@@ -1,10 +1,11 @@
+
+
 from selenium import webdriver
 from time import sleep
 from selenium.webdriver.chrome.service import Service
 
-
-s = Service(r"ChromeDriverManager().install()")
+s = Service(r"C:\Users\Ania\PycharmProjects\tutorial_selenium\drivers\chromedriver.exe")
 driver = webdriver.Chrome(service=s)
 driver.get("http://google.com")
-driver.maximize_window()
+driver.set_window_size(100, 100)   # szerokość, wysokość
 sleep(10)
